@@ -33,111 +33,151 @@
     </header>
     <main>
         <div class="container">
-        <section id="about" class="section">
-            <h2>ข้อมูลทั่วไป</h2>
-            <ul>
-                <li>ชื่อจังหวัด: สุราษฎร์ธานี</li>
-                <li>
-                    ตำแหน่งที่ตั้ง: ตั้งอยู่ในภาคใต้ของประเทศไทย
-                    เป็นจังหวัดที่มีพื้นที่มากที่สุดในภาคใต้
-                    <ul>
-                        <li>ทิศเหนือ: ติดกับจังหวัดชุมพร</li>
-                        <li>ทิศใต้: ติดกับจังหวัดนครศรีธรรมราช</li>
-                        <li>ทิศตะวันออก: ติดกับอ่าวไทย</li>
-                        <li>ทิศตะวันตก: ติดกับจังหวัดระนองและจังหวัดพังงา</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section id="tourist" class="section">
-            <h2>สถานที่ท่องเที่ยว</h2>
-            <ul>
-                <li>
-                    หมู่เกาะสมุย: เกาะที่มีชื่อเสียงระดับนานาชาติ
-                    เต็มไปด้วยชายหาดที่สวยงามและสถานที่พักผ่อนสุดหรู
-                </li>
-                <li>
-                    เขื่อนรัชชประภา (เขื่อนเชี่ยวหลาน):
-                    แหล่งท่องเที่ยวที่โดดเด่นด้วยวิวทิวทัศน์เขาหินปูนและอ่างเก็บน้ำที่สวยงามจนได้รับฉายาว่า
-                    "กุ้ยหลินเมืองไทย"
-                </li>
-                <li>
-                    อุทยานธรรมเขานาในหลวง: มีสิ่งที่โดดเด่นคือ ซุ้มประตูพุทธวดี 9 ยอด
-                    ในช่วงเวลาเช้ามีแสงกระทบประตูยิ่งมีความงดงามและมีมนต์ขลัง
-                </li>
-                <li>
-                    วัดพระบรมธาตุไชยา:
-                    วัดสำคัญที่เป็นสัญลักษณ์ทางพุทธศาสนาและประวัติศาสตร์ของจังหวัด
-                </li>
-            </ul>
-        </section>
-        <section id="symbol" class="section">
-            <h2>สัญลักษณ์ประจำจังหวัด</h2>
-            <ul>
-                <li>ตราประจำจังหวัด: รูปพระบรมธาตุไชยาที่อยู่ในซุ้มเรือนแก้ว</li>
-                <li>ดอกไม้ประจำจังหวัด: ดอกพะยอม</li>
-                <li>
-                    คำขวัญจังหวัด: "เมืองร้อยเกาะ เงาะอร่อย หอยใหญ่ ไข่แดง แหล่งธรรมะ"
-                </li>
-            </ul>
-        </section>
-        <section id="highlight" class="section">
-            <div class="text-center">
-                <h3>Highlight</h3>
-            </div>
-            <!-- ส่วนของ Carousel -->
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <!-- Carousel Indicators (จุดแสดงตำแหน่งใน carousel) -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-      
-        <!-- ภาพที่จะแสดงใน Carousel -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/images/col1.jpg" class="d-block w-100 col-img" alt="เขื่อนรัชชประภา">
-            <div class="carousel-caption d-none d-md-block">
-              <p>เขื่อนรัชชประภา</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/col2.jpg" class="d-block w-100 col-img" alt="เกาะสมุย">
-            <div class="carousel-caption d-none d-md-block">
-              <p>เกาะสมุย</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/col3-1.jpg" class="d-block w-100 col-img" alt="ป่าต้นน้ำบ้านน้ำราด">
-            <div class="carousel-caption d-none d-md-block">
-              <p>ป่าต้นน้ำบ้านน้ำราด</p>
-            </div>
-          </div>
-        </div>
-      
-        <!-- ปุ่มควบคุม Carousel (Next, Prev) -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      
-      <!-- ใส่ลิงค์ไปที่ Bootstrap CDN -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-      
-                </div>
+            <section id="about" class="section">
+                <h2>ข้อมูลทั่วไป</h2>
+                <ul>
+                    <li>ชื่อจังหวัด: สุราษฎร์ธานี</li>
+                    <li>
+                        ตำแหน่งที่ตั้ง: ตั้งอยู่ในภาคใต้ของประเทศไทย
+                        เป็นจังหวัดที่มีพื้นที่มากที่สุดในภาคใต้
+                        <ul>
+                            <li>ทิศเหนือ: ติดกับจังหวัดชุมพร</li>
+                            <li>ทิศใต้: ติดกับจังหวัดนครศรีธรรมราช</li>
+                            <li>ทิศตะวันออก: ติดกับอ่าวไทย</li>
+                            <li>ทิศตะวันตก: ติดกับจังหวัดระนองและจังหวัดพังงา</li>
+                        </ul>
+                    </li>
+                </ul>
             </section>
+            <section id="tourist" class="section">
+                <h2>สถานที่ท่องเที่ยว</h2>
+                <ul>
+                    <li>
+                        หมู่เกาะสมุย: เกาะที่มีชื่อเสียงระดับนานาชาติ
+                        เต็มไปด้วยชายหาดที่สวยงามและสถานที่พักผ่อนสุดหรู
+                    </li>
+                    <li>
+                        เขื่อนรัชชประภา (เขื่อนเชี่ยวหลาน):
+                        แหล่งท่องเที่ยวที่โดดเด่นด้วยวิวทิวทัศน์เขาหินปูนและอ่างเก็บน้ำที่สวยงามจนได้รับฉายาว่า
+                        "กุ้ยหลินเมืองไทย"
+                    </li>
+                    <li>
+                        อุทยานธรรมเขานาในหลวง: มีสิ่งที่โดดเด่นคือ ซุ้มประตูพุทธวดี 9 ยอด
+                        ในช่วงเวลาเช้ามีแสงกระทบประตูยิ่งมีความงดงามและมีมนต์ขลัง
+                    </li>
+                    <li>
+                        วัดพระบรมธาตุไชยา:
+                        วัดสำคัญที่เป็นสัญลักษณ์ทางพุทธศาสนาและประวัติศาสตร์ของจังหวัด
+                    </li>
+                </ul>
+            </section>
+            <section id="symbol" class="section">
+                <h2>สัญลักษณ์ประจำจังหวัด</h2>
+                <ul>
+                    <li>ตราประจำจังหวัด: รูปพระบรมธาตุไชยาที่อยู่ในซุ้มเรือนแก้ว</li>
+                    <li>ดอกไม้ประจำจังหวัด: ดอกพะยอม</li>
+                    <li>
+                        คำขวัญจังหวัด: "เมืองร้อยเกาะ เงาะอร่อย หอยใหญ่ ไข่แดง แหล่งธรรมะ"
+                    </li>
+                </ul>
+            </section>
+            <section id="highlight" class="section">
+                <div class="text-center">
+                    <h3>Highlight</h3>
+                </div>
+                <!-- ส่วนของ Carousel -->
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Carousel Indicators (จุดแสดงตำแหน่งใน carousel) -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                    <!-- ภาพที่จะแสดงใน Carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/col1.jpg" class="d-block w-100 col-img" alt="เขื่อนรัชชประภา">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>เขื่อนรัชชประภา</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/col2.jpg" class="d-block w-100 col-img" alt="เกาะสมุย">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>เกาะสมุย</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/col3-1.jpg" class="d-block w-100 col-img" alt="ป่าต้นน้ำบ้านน้ำราด">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>ป่าต้นน้ำบ้านน้ำราด</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ปุ่มควบคุม Carousel (Next, Prev) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- ใส่ลิงค์ไปที่ Bootstrap CDN -->
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+                    rel="stylesheet">
+                <script
+                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
         </div>
-        </main>
-    <footer>
-        <p>&copy; 2024 Surat thani</p>
-    </footer>
+        </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- ข้อมูลติดต่อ -->
+            <div class="col-md-4">
+              <h5>ข้อมูลติดต่อ</h5>
+              <p>โทรศัพท์: 095546617</p>
+              <p>อีเมล: 66160014@go.buu.ac.th</p>
+            </div>
+            
+            <!-- Social Media Links -->
+            <div class="col-md-4">
+              <h5>ติดตามเรา</h5>
+              <ul class="list-unstyled">
+                <li><a href="https://www.facebook.com/Kimm2547" class="text-white">Facebook</a></li>
+                <li><a href="https://www.instagram.com/Ritthikiat_9/" class="text-white">Instagram</a></li>
+              </ul>
+            </div>
+            
+            <!-- เมนูสำคัญ -->
+            <div class="col-md-4">
+              <h5>เมนูสำคัญ</h5>
+              <ul class="list-unstyled">
+                <li><a href="index.html" class="text-white">หน้าหลัก</a></li>
+                <li><a href="info.html" class="text-white">รายละเอียดสถานที่ท่องเที่ยว</a></li>
+                <li><a href="contact.html" class="text-white">ติดต่อเรา</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="text-center mt-4">
+            <p>&copy; 2025 Surat thani. 66160014 Ritthikiat.</p>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
