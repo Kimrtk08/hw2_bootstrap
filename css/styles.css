@@ -1,0 +1,456 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+/* index.html */
+.nav-list {
+    background-color: orange;
+    list-style: none;
+    display: flex;
+    align-items: center; /* จัดให้อยู่กลางในแนวตั้ง */
+    justify-content: center;
+    height: 150px; /* ปรับให้เท่ากับความสูงของโลโก้ */
+    margin: 0; /* ลบขอบนอก */
+    padding: 0; /* ลบขอบใน */
+}
+.nav-list a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 2rem;
+    font-family: "Kanit", sans-serif;
+}
+.nav-list a:hover{
+    color: #000000;
+}
+.nav-list a[aria-current="page"] {
+    font-weight: bold;
+    color: #ffffff;
+}
+.nav-list li {
+    margin: 0 15px;
+}
+.container{
+    width: 960px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 30px;
+    margin-left: 15rem;
+    margin-right: auto;
+}
+.grid-hl{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.col{
+    display: flex;
+    width: 100%;
+    height: 100%; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.col-img{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;   
+}
+
+/* ปรับข้อความให้เหมาะสม */
+.carousel-caption p {
+    font-size: 1.5rem; /* ปรับขนาดข้อความ */
+    color: white; /* เปลี่ยนสีข้อความ */
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    
+}
+.logo1{
+    display: none;
+    justify-content: center;
+    
+}
+.logo img{
+    width: 150px;
+    height: auto;
+    padding-top: 0;
+}
+.text-center{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.section h2{
+    font-weight: bold;
+}
+
+/* สำหรับ mobile */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    transition: all 0.3s ease;
+}
+/* จัดการแถบ Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    border: 2px solid #ffffff; /* ขอบของกล่องค้นหา */
+    border-radius: 25px; /* มุมโค้ง */
+    overflow: hidden; /* ซ่อนขอบส่วนเกิน */
+    background-color: #ffffff; /* พื้นหลังขาว */
+    transition: box-shadow 0.3s ease-in-out; /* เพิ่มเอฟเฟกต์เมื่อโฟกัส */
+}
+
+.search-bar:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* เงาเมื่อ Hover */
+}
+
+.search-bar input {
+    height: 40px;
+    border: none;
+    padding: 0 15px;
+    font-size: 1rem;
+    flex: 1; /* ขยาย Input ให้เต็ม */
+    outline: none; /* ลบเส้นขอบเมื่อโฟกัส */
+    background: none; /* พื้นหลังโปร่งใส */
+    color: #333; /* สีตัวอักษร */
+}
+
+.search-bar input::placeholder {
+    color: #aaa; /* สีตัวอักษร Placeholder */
+    font-style: italic; /* ตัวเอียง */
+}
+
+.search-bar button {
+    height: 40px;
+    width: 50px;
+    border: none;
+    background-color: #f57c00; /* สีปุ่มค้นหา */
+    color: #ffffff; /* สีไอคอน */
+    cursor: pointer;
+    font-size: 1.2rem; /* ขนาดไอคอน */
+    transition: background-color 0.3s ease; /* เอฟเฟกต์เปลี่ยนสี */
+    display: flex;
+    align-items: center;
+}
+
+.search-bar button:hover {
+    background-color: #d66a00; /* สีเข้มขึ้นเมื่อ Hover */
+}
+
+/* info.html */
+.grid-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem; 
+    align-items: center;
+    padding-top: 10px;
+}
+.grid-info img {
+    max-width: 300px;
+    border-radius: 10px;   
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.line-left,
+.line-right {
+    flex: 1;
+    border: 0;
+    border-top: 2px solid #e7a24e; 
+    margin: 0 10px; 
+}
+.card{
+    border-radius: 10px; /* ทำให้มุมการ์ดโค้ง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้การ์ด */
+    overflow: hidden; /* ซ่อนส่วนเกิน */
+    transition: transform 0.3s ease-in-out; /* เพิ่มเอฟเฟกต์ให้การ์ด */
+}
+.card:hover {
+    transform: translateY(-5px); /* ทำให้การ์ดลอยขึ้นเมื่อ hover */
+}
+.card-body {
+    background-color: #f9f9f9; /* เปลี่ยนสีพื้นหลังของการ์ด */
+    padding: 10px; /* เพิ่มระยะห่างรอบๆ ตัวเนื้อหาภายในการ์ด */
+}
+.card-title {
+    font-size: 1.5rem; /* ปรับขนาดของชื่อ */
+    color: #333; /* เปลี่ยนสีของชื่อ */
+    margin-bottom: 10px; /* เพิ่มระยะห่างใต้ชื่อ */
+}
+/* contact.html */
+form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+small {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666666;
+}
+.footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+
+   }
+
+.footer h5 {
+    font-size: 1.25rem; /* ขนาดตัวอักษรหัวข้อ */
+    font-weight: bold;  /* ตัวหนาหัวข้อ */
+    margin-bottom: 1rem; /* ระยะห่างใต้หัวข้อ */
+}
+
+.footer p, .footer ul li {
+    font-size: 1rem; /* ขนาดตัวอักษรข้อความ */
+    margin-bottom: 0.5rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer .list-unstyled {
+    padding-left: 0; /* ลบจุดรายการ */
+}
+
+.footer .list-unstyled li {
+    margin-bottom: 0.5rem; /* ระยะห่างระหว่างรายการ */
+}
+/* tablet */
+@media screen and (max-width: 1024px) {
+    /* ซ่อนเมนูใน tablet */
+    .container{
+        width: 1025px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-list.active {
+        display: flex;
+    }
+
+    /* การจัดการเมนู hamburger */
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 120px; /* ลดขนาด logo บนมือถือ */
+        height: auto;
+    }
+
+    /* ซ่อน Search Bar บนมือถือ */
+    .search-bar {
+        display: none;
+    }
+
+    .nav-list a {
+        padding: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .grid-hl{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem; 
+        padding-top: 10px
+    }
+    .col {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer {
+        margin: 100;
+    }
+    .footer .row {
+            text-align: center; /* ทำให้ข้อความในคอลัมน์ทั้งหมดอยู่กลาง */
+    }
+        
+    .footer h5 {
+            font-size: 1.1rem; /* ลดขนาดหัวข้อสำหรับหน้าจอเล็ก */
+    }
+    
+    .footer p, .footer ul li {
+            font-size: 0.9rem; /* ลดขนาดข้อความ */
+    }
+}
+/* moblie */
+@media screen and (max-width: 767px) {
+    /* ซ่อนเมนูใน mobile */
+    .logo1 {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .logo1 img{
+        width: 150px;
+        height: auto;
+        padding-top: 0;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: orange;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 1;
+    }
+    .container{
+        width: 768x;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-list.active {
+        display: flex;
+    }
+
+    /* การจัดการเมนู hamburger */
+    .menu-toggle {
+        display: flex;
+        padding: 20px 0px 0px 20px;
+    }
+
+
+
+    .logo img {
+        width: 120px; /* ลดขนาด logo บนมือถือ */
+        height: auto;
+    }
+
+    /* ซ่อน Search Bar บนมือถือ */
+    .search-bar {
+        display: none;
+    }
+
+    .nav-list a {
+        padding: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .grid-hl{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .grid-info {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem; 
+        align-items: center;
+        padding-top: 10px
+    }
+    .col {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer {
+        margin: 100;
+    }
+    .footer .row {
+            text-align: center; /* ทำให้ข้อความในคอลัมน์ทั้งหมดอยู่กลาง */
+    }
+        
+    .footer h5 {
+            font-size: 1.1rem; /* ลดขนาดหัวข้อสำหรับหน้าจอเล็ก */
+    }
+    
+    .footer p, .footer ul li {
+            font-size: 0.9rem; /* ลดขนาดข้อความ */
+    }
+}
+
