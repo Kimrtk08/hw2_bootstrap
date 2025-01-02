@@ -1,3 +1,54 @@
 # hw2_bootstrap
 
 ## command in hw2
+- git clone https://github.com/Kimrtk08/hw2_bootstrap 
+- git add .
+- git commit -m "สร้างไฟล์และโฟลเดอร์"
+- git add .
+- git commit -m "test push"
+- git push
+- git add .
+- git commit -m "เพิ่มโค้ดจากงานเก่า"
+- git add .
+- git commit -m "เพิ่มโค้ดจากงานเก่า info"
+- git add .
+- git commit -m "เพิ่มโค้ดจากงานเก่า contact"
+- git add .
+- git commit -m "เพิ่มรูปภาพ"
+- git add .
+- git commit -m "เพิ่มโลโก้ทางซ้าย"
+- git add .
+- git commit -m "เพิ่มbootstarp carousel ในรูปภาพ"
+- git add .
+- git commit -m "เพิ่มfooterและข้อมูลติดต่อต่างๆ"
+- git add .
+- git commit -m "copyright" 
+- git add .
+- git commit -m "โลโก้แสดงบนมือถือ"
+- git add .
+- git commit -m "แถบค้นหา"
+- git add .
+- git commit -m "แก้ logo"
+- git add .
+- git commit -m "เพิ่ม card และ สถานที่"
+- git add .
+- git commit -m "เพิ่ม footer ใน info" 
+- git add .
+- git commit -m "ใส่ logo ในnav ของ info"
+- git add .
+- git commit -m "ใส่ แถบค้นหา ของ info"  
+- git add .
+- git commit -m "ใส่ logo ในnav ของ contact"
+- git add .
+- git commit -m "ใส่ แถบค้นหา ของ contact"
+- git add .
+- git commit -m "เพิ่ม footer ใน contact"
+- git add .
+- git commit -m "เพิ่ม grid system" 
+- git add .
+- git commit -m "เพิ่ม logo"
+- git add .
+- git commit -m "เพิ่ม style css"
+- git add .
+- git commit -m "comment"
+- git push
